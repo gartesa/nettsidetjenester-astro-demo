@@ -1,0 +1,36 @@
+---
+import { nav } from "../data/site";
+---
+
+<header class="sticky top-0 z-50 border-b border-slate-200 bg-white/90 backdrop-blur">
+  <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+    <a href="/" class="flex items-center gap-3">
+      <img
+        src="/images/logo-videas.jpg"
+        alt="Videas IA"
+        class="h-10 w-10 rounded-md object-contain"
+      />
+      <span class="text-lg font-bold text-slate-900">Videas IA</span>
+    </a>
+
+    <nav class="hidden items-center gap-8 md:flex">
+      {
+        nav.map((item) => (
+          <a
+            href={item.href}
+            class="text-sm font-medium text-slate-600 transition hover:text-sky-600"
+          >
+            {item.label}
+          </a>
+        ))
+      }
+    </nav>
+
+    <a
+      href="#contacto"
+      class="rounded-lg bg-brand-gradient px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:opacity-90"
+    >
+      Hablemos
+    </a>
+  </div>
+</header>

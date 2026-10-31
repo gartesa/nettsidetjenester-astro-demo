@@ -1,0 +1,17 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Hero from "../components/Hero.astro";
+import Soluciones from "../components/Soluciones.astro";
+import Contacto from "../components/Contacto.astro";
+
+export const prerender = true;
+---
+
+<Layout
+  title="Videas IA - Soluciones Digitales & Facturación VeriFactu"
+  description="Videas IA desarrolla soluciones digitales propias para automatizar la gestión contable, evaluar riesgos psicosociales y agilizar la atención a pacientes, con IA aplicada de extremo a extremo."
+>
+  <Hero />
+  <Soluciones />
+  <Contacto />
+</Layout>
